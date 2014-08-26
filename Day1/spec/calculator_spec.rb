@@ -22,11 +22,11 @@ describe Calculator do
 
      #Use the raise_error matcher to specify that a block of code raises an error. 
   it "should raise an error when a negative number is entered" do
-    expect(Calculator.add("1,-8")).to raise_error 
+    expect(Calculator.add("1,-8")).to raise_exception
   end
        
    it "should show input when passed negative numbers" do
-    expect(Calculator.add("-2,-8")).to raise_error "Negatives not allowed: -2 & -8"
+    expect(Calculator.add("-2,-8")).to raise_exception "Negatives not allowed: -2 & -8"
    end
   end
  
